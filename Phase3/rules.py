@@ -1,7 +1,14 @@
 from sqlalchemy import case, func
 
 from database import Customer, TelecomPartner, get_db
-from schemas import ChurnSummaryMetrics, ChurnSummaryResponse, CustomerResponse, PartnerChurnBreakdown
+from schemas import (
+    ChurnSummaryMetrics,
+    ChurnSummaryResponse,
+    CustomerResponse,
+    HighRiskCustomerResponse,
+    HighRiskCustomersListResponse,
+    PartnerChurnBreakdown,
+)
 
 
 def get_customer_by_id(customer_id: int):
@@ -71,4 +78,51 @@ def get_churn_summary():
             retention_rate=retention_rate,
         ),
         partner_breakdown=partner_breakdown,
+    )
+
+
+def get_high_risk_customers():
+    """Get all customers categorized as High Risk - fetches pre-calculated data from database."""
+    db = next(get_db())
+    
+    # Query only High Risk customers directly from database
+    customers = db.query(Customer).filter(Customer.risk_category == "High Risk").all()
+    
+    high_risk_customers = []
+    
+    for customer in customers:
+        usage = customer.usage
+        partner_name = customer.telecom_partner.partner_name if customer.telecom_partner else None
+        
+        high_risk_customers.append(
+            HighRiskCustomerResponse(
+                customer_id=customer.customer_id,
+                gender=customer.gender,
+                age=customer.age,
+                pincode=customer.pincode,
+                city=customer.location.city if customer.location else None,
+                state=customer.location.state if customer.location else None,
+                date_of_registration=customer.date_of_registration.strftime("%Y-%m-%d")
+                if customer.date_of_registration
+                else None,
+                num_dependents=customer.num_dependents,
+                estimated_salary=float(customer.estimated_salary)
+                if customer.estimated_salary is not None
+                else None,
+                churn=customer.churn,
+                tenure=customer.tenure,
+                calls_made=usage.calls_made if usage else None,
+                sms_sent=usage.sms_sent if usage else None,
+                data_used=float(usage.data_used) if usage and usage.data_used is not None else None,
+                partner_name=partner_name,
+                risk_category=customer.risk_category,
+                risk_score=customer.risk_score,
+            )
+        )
+    
+    db.close()
+    
+    return HighRiskCustomersListResponse(
+        total_high_risk_customers=len(high_risk_customers),
+        customers=high_risk_customers,
     )
