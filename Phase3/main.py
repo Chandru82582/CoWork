@@ -3,6 +3,7 @@ from datetime import datetime
 
 from fastapi import Depends, FastAPI, HTTPException
 from fastapi.security import OAuth2PasswordRequestForm
+from fastapi.middleware.cors import CORSMiddleware
 
 from auth import authenticate_admin, get_current_admin_user
 from schemas import (
@@ -14,6 +15,7 @@ from schemas import (
 )
 from rules import get_churn_summary as get_churn_summary_service
 from rules import get_customer_by_id, get_high_risk_customers
+from dashboard_routes import router as dashboard_router
 
 # --- Logging Setup ---
 logging.basicConfig(
@@ -28,6 +30,19 @@ logger = logging.getLogger(__name__)
 
 
 app = FastAPI(title="Telecom Customer API")
+app.include_router(dashboard_router)
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=[
+        "http://localhost:5173",   # Vite dev server
+        "http://localhost:4173",   # Vite preview build
+        # add your production dashboard origin here before deploying
+    ],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 
 @app.on_event("startup")
