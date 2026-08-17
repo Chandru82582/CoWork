@@ -10,6 +10,7 @@ import DonutChartPanel from "../components/charts/DonutChartPanel.jsx";
 import FilterBar from "../components/filters/FilterBar.jsx";
 import CustomerTable from "../components/table/CustomerTable.jsx";
 import CustomerDetailDrawer from "../components/drawer/CustomerDetailDrawer.jsx";
+import PredictionPage from "./PredictionPage.jsx";
 import { useAnalytics } from "../hooks/useAnalytics.js";
 import { useCustomers } from "../hooks/useCustomers.js";
 
@@ -22,6 +23,14 @@ const RISK_COLORS = {
 export default function DashboardPage() {
   const [active, setActive] = useState("overview");
   const [selectedCustomerId, setSelectedCustomerId] = useState(null);
+
+  const [predictPrefill, setPredictPrefill] = useState(null);
+
+  const jumpToPredict = (prefillValues) => {
+    setPredictPrefill(prefillValues);
+    setSelectedCustomerId(null);
+    setActive("predict");
+  };
 
   const analytics = useAnalytics();
   const customers = useCustomers();
@@ -83,10 +92,19 @@ const pieChartConfig = {
 };
   return (
     <DashboardLayout active={active} onNavigate={setActive}>
-      <header style={{ marginBottom: 20 }}>
+      {active !== "predict" && (
+        <header style={{ marginBottom: 20 }}>
+          <div className="eyebrow">OVERVIEW</div>
+          <h1 style={{ margin: "4px 0 0", fontSize: 24 }}>Churn & risk console</h1>
+        </header>
+      )}
+
+      {active === "predict" && <PredictionPage prefill={predictPrefill} />}
+      
+      {/* <header style={{ marginBottom: 20 }}>
         <div className="eyebrow">OVERVIEW</div>
         <h1 style={{ margin: "4px 0 0", fontSize: 24 }}>Churn & risk console</h1>
-      </header>
+      </header> */}
 
       {active === "overview" && (
         <div style={{ display: "flex", flexDirection: "column", gap: 20 }}>
@@ -300,7 +318,10 @@ const pieChartConfig = {
         </div>
       )}
 
-      <CustomerDetailDrawer customerId={selectedCustomerId} onClose={() => setSelectedCustomerId(null)} />
-    </DashboardLayout>
+      <CustomerDetailDrawer
+        customerId={selectedCustomerId}
+        onClose={() => setSelectedCustomerId(null)}
+        onPredict={jumpToPredict}
+      />    </DashboardLayout>
   );
 }

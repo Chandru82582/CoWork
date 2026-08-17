@@ -6,7 +6,7 @@ export default function KpiCardWithTrend({ label, value, trend, unit = "", helpT
   const color = isUp ? "var(--accent-red)" : isDown ? "var(--accent-green)" : "var(--text-tertiary)";
 
   return (
-    <div className="panel" style={{ padding: 18, display: "flex", flexDirection: "column", gap: 6 }}>
+    <div className="panel" style={{ padding: 18, display: "flex", flexDirection: "column", gap: 6, background: "#182338" }}>
       <div className="eyebrow">{label}</div>
       <div style={{ display: "flex", alignItems: "baseline", gap: 10 }}>
         <div className="mono" style={{ fontSize: 30, fontWeight: 600 }}>

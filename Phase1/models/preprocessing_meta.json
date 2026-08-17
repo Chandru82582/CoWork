@@ -1,0 +1,24 @@
+{
+  "cols_to_scale": [
+    "age",
+    "num_dependents",
+    "calls_made",
+    "sms_sent",
+    "data_used",
+    "estimated_salary"
+  ],
+  "feature_columns": [
+    "gender",
+    "age",
+    "num_dependents",
+    "estimated_salary",
+    "calls_made",
+    "sms_sent",
+    "data_used",
+    "telecom_partner_Airtel",
+    "telecom_partner_BSNL",
+    "telecom_partner_Reliance Jio",
+    "telecom_partner_Vodafone"
+  ],
+  "target_column": "churn"
+}

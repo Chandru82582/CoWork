@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import SignalBars from "../kpi/SignalBars.jsx";
 import { fetchCustomerDetail } from "../../api/client.js";
 
-export default function CustomerDetailDrawer({ customerId, onClose }) {
+export default function CustomerDetailDrawer({ customerId, onClose, onPredict }) {
   const [detail, setDetail] = useState(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
@@ -98,12 +98,46 @@ export default function CustomerDetailDrawer({ customerId, onClose }) {
                 ))}
               </div>
             </Section>
+
+            {onPredict && (
+              <button
+                onClick={() =>
+                  onPredict({
+                    customer_id: String(detail.customer_id),
+                    age: String(detail.age),
+                    gender: detail.gender,
+                    tenure: String(detail.tenure),
+                    num_dependents: String(detail.num_dependents),
+                    estimated_salary: String(detail.estimated_salary ?? ""),
+                    calls_made: String(detail.usage.calls_made),
+                    sms_sent: String(detail.usage.sms_sent),
+                    data_used: String(detail.usage.data_used),
+                    telecom_partner: detail.partner_name,
+                    pincode: detail.pincode,
+                  })
+                }
+                style={predictBtnStyle}
+              >
+                Run churn prediction for this customer →
+              </button>
+            )}
           </>
         )}
       </div>
     </div>
   );
 }
+
+const predictBtnStyle = {
+  background: "var(--accent-blue)",
+  color: "#0c1116",
+  fontWeight: 600,
+  border: "none",
+  borderRadius: "var(--radius-sm)",
+  padding: "10px 14px",
+  cursor: "pointer",
+  fontSize: 13,
+};
 
 function Section({ title, children }) {
   return (

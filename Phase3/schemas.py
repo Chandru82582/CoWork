@@ -90,3 +90,4 @@ class ChurnPredictionOutput(BaseModel):
     confidence_score: float  # 0.0 to 1.0
     risk_level: str  # "Low", "Medium", "High"
     recommendation: str  # Action to take
+    model_votes: dict[str, int] | None = None   # <-- new: {"logistic_regression": 0, "random_forest": 1, "xgboost": 1}

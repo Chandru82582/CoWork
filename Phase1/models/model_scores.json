@@ -1,0 +1,8 @@
+{
+  "scores": {
+    "logistic_regression": 0.5051420574745675,
+    "random_forest": 0.49833013500200324,
+    "xgboost": 0.4969367343058459
+  },
+  "champion": "logistic_regression"
+}

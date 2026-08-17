@@ -617,3 +617,248 @@
 2026-08-17 12:12:36,737 - main - INFO - Telecom Customer API Shutting Down
 2026-08-17 12:12:36,738 - main - INFO - Timestamp: 2026-08-17 12:12:36.738001
 2026-08-17 12:12:36,738 - main - INFO - ==================================================
+2026-08-17 14:59:17,013 - main - INFO - ==================================================
+2026-08-17 14:59:17,014 - main - INFO - Telecom Customer API Starting Up
+2026-08-17 14:59:17,014 - main - INFO - Timestamp: 2026-08-17 14:59:17.014844
+2026-08-17 14:59:17,015 - main - INFO - ==================================================
+2026-08-17 14:59:55,319 - main - INFO - Login attempt for user: admin
+2026-08-17 15:00:11,103 - main - INFO - Login attempt for user: admin
+2026-08-17 15:01:11,854 - main - INFO - Churn prediction request for customer: 12
+2026-08-17 15:01:11,902 - main - INFO - Loaded fitted preprocessor: 11 features, 4 partner dummy columns, 6 scaled columns
+2026-08-17 15:01:12,193 - main - INFO - Loaded model: logistic_regression (logistic_regression.joblib)
+2026-08-17 15:01:14,496 - main - INFO - Loaded model: random_forest (random_forest.joblib)
+2026-08-17 15:01:14,633 - main - INFO - Loaded model: xgboost (xgboost_model.joblib)
+2026-08-17 15:01:14,783 - main - INFO - Churn prediction completed for customer 12: Risk=Low, Probability=13.05%, Votes={'logistic_regression': 0, 'random_forest': 0, 'xgboost': 0}
+2026-08-17 15:07:09,211 - main - INFO - Fetched risk-tier split
+2026-08-17 15:07:09,538 - main - INFO - Fetched risk-tier split
+2026-08-17 15:07:09,663 - main - INFO - Fetched churn-by-partner aggregation
+2026-08-17 15:07:09,807 - main - INFO - Fetching KPI summary
+2026-08-17 15:07:10,162 - main - INFO - Fetched churn-by-age-bracket aggregation
+2026-08-17 15:07:10,402 - main - INFO - Fetched churn-by-partner aggregation
+2026-08-17 15:07:10,729 - main - INFO - Fetching KPI summary
+2026-08-17 15:07:10,981 - main - INFO - Fetched churn-by-state aggregation
+2026-08-17 15:07:11,076 - main - INFO - Fetched customer page 1/9743 (25 rows, filters={})
+2026-08-17 15:07:11,401 - main - INFO - Fetched churn-by-age-bracket aggregation
+2026-08-17 15:07:12,962 - main - INFO - Fetched churn-by-state aggregation
+2026-08-17 15:07:13,171 - main - INFO - Fetched customer page 1/9743 (25 rows, filters={})
+2026-08-17 15:08:14,452 - main - INFO - Fetched customer page 1/348 (25 rows, filters={'states': ['Mizoram']})
+2026-08-17 15:08:27,117 - main - INFO - Fetched customer page 1/9743 (25 rows, filters={})
+2026-08-17 15:29:34,438 - main - INFO - ==================================================
+2026-08-17 15:29:34,438 - main - INFO - Telecom Customer API Starting Up
+2026-08-17 15:29:34,438 - main - INFO - Timestamp: 2026-08-17 15:29:34.438661
+2026-08-17 15:29:34,438 - main - INFO - ==================================================
+2026-08-17 15:29:35,423 - main - INFO - ==================================================
+2026-08-17 15:29:35,424 - main - INFO - Telecom Customer API Shutting Down
+2026-08-17 15:29:35,424 - main - INFO - Timestamp: 2026-08-17 15:29:35.424773
+2026-08-17 15:29:35,425 - main - INFO - ==================================================
+2026-08-17 15:29:46,797 - main - INFO - ==================================================
+2026-08-17 15:29:46,798 - main - INFO - Telecom Customer API Starting Up
+2026-08-17 15:29:46,798 - main - INFO - Timestamp: 2026-08-17 15:29:46.798436
+2026-08-17 15:29:46,798 - main - INFO - ==================================================
+2026-08-17 15:30:13,448 - main - INFO - Fetched risk-tier split
+2026-08-17 15:30:13,850 - main - INFO - Fetched risk-tier split
+2026-08-17 15:30:13,887 - main - INFO - Fetched churn-by-partner aggregation
+2026-08-17 15:30:13,962 - main - INFO - Fetching KPI summary
+2026-08-17 15:30:14,350 - main - INFO - Fetched churn-by-age-bracket aggregation
+2026-08-17 15:30:14,646 - main - INFO - Fetched churn-by-partner aggregation
+2026-08-17 15:30:14,852 - main - INFO - Fetching KPI summary
+2026-08-17 15:30:15,120 - main - INFO - Fetched churn-by-state aggregation
+2026-08-17 15:30:15,274 - main - INFO - Fetched customer page 1/9743 (25 rows, filters={})
+2026-08-17 15:30:15,491 - main - INFO - Fetched churn-by-age-bracket aggregation
+2026-08-17 15:30:17,086 - main - INFO - Fetched churn-by-state aggregation
+2026-08-17 15:30:17,413 - main - INFO - Fetched customer page 1/9743 (25 rows, filters={})
+2026-08-17 15:39:09,752 - main - INFO - Fetched risk-tier split
+2026-08-17 15:39:10,080 - main - INFO - Fetched churn-by-partner aggregation
+2026-08-17 15:39:10,152 - main - INFO - Fetching KPI summary
+2026-08-17 15:39:10,416 - main - INFO - Fetched churn-by-age-bracket aggregation
+2026-08-17 15:39:11,162 - main - INFO - Fetched churn-by-state aggregation
+2026-08-17 15:39:11,277 - main - INFO - Fetched customer page 1/9743 (25 rows, filters={})
+2026-08-17 15:39:12,559 - main - INFO - Fetched risk-tier split
+2026-08-17 15:39:12,803 - main - INFO - Fetched churn-by-partner aggregation
+2026-08-17 15:39:12,880 - main - INFO - Fetching KPI summary
+2026-08-17 15:39:13,172 - main - INFO - Fetched churn-by-age-bracket aggregation
+2026-08-17 15:39:13,858 - main - INFO - Fetched churn-by-state aggregation
+2026-08-17 15:39:14,003 - main - INFO - Fetched customer page 1/9743 (25 rows, filters={})
+2026-08-17 15:43:54,056 - main - INFO - Fetched risk-tier split
+2026-08-17 15:43:54,284 - main - INFO - Fetched churn-by-partner aggregation
+2026-08-17 15:43:54,393 - main - INFO - Fetched risk-tier split
+2026-08-17 15:43:54,410 - main - INFO - Fetching KPI summary
+2026-08-17 15:43:54,797 - main - INFO - Fetched churn-by-age-bracket aggregation
+2026-08-17 15:43:55,071 - main - INFO - Fetched churn-by-partner aggregation
+2026-08-17 15:43:55,311 - main - INFO - Fetching KPI summary
+2026-08-17 15:43:55,588 - main - INFO - Fetched churn-by-state aggregation
+2026-08-17 15:43:55,776 - main - INFO - Fetched customer page 1/9743 (25 rows, filters={})
+2026-08-17 15:43:56,043 - main - INFO - Fetched churn-by-age-bracket aggregation
+2026-08-17 15:43:57,380 - main - INFO - Fetched churn-by-state aggregation
+2026-08-17 15:43:57,592 - main - INFO - Fetched customer page 1/9743 (25 rows, filters={})
+2026-08-17 15:43:58,482 - main - INFO - Fetched risk-tier split
+2026-08-17 15:43:58,848 - main - INFO - Fetched churn-by-partner aggregation
+2026-08-17 15:43:59,018 - main - INFO - Fetching KPI summary
+2026-08-17 15:43:59,250 - main - INFO - Fetched churn-by-age-bracket aggregation
+2026-08-17 15:43:59,477 - main - INFO - Fetched risk-tier split
+2026-08-17 15:43:59,844 - main - INFO - Fetched churn-by-partner aggregation
+2026-08-17 15:43:59,867 - main - INFO - Fetching KPI summary
+2026-08-17 15:43:59,971 - main - INFO - Fetched churn-by-state aggregation
+2026-08-17 15:44:00,171 - main - INFO - Fetched customer page 1/9743 (25 rows, filters={})
+2026-08-17 15:44:00,182 - main - INFO - Fetched churn-by-age-bracket aggregation
+2026-08-17 15:44:01,794 - main - INFO - Fetched churn-by-state aggregation
+2026-08-17 15:44:02,178 - main - INFO - Fetched customer page 1/9743 (25 rows, filters={})
+2026-08-17 15:45:01,758 - main - INFO - Fetched risk-tier split
+2026-08-17 15:45:02,011 - main - INFO - Fetched risk-tier split
+2026-08-17 15:45:02,119 - main - INFO - Fetched churn-by-partner aggregation
+2026-08-17 15:45:02,181 - main - INFO - Fetching KPI summary
+2026-08-17 15:45:02,364 - main - INFO - Fetched churn-by-age-bracket aggregation
+2026-08-17 15:45:02,643 - main - INFO - Fetched churn-by-partner aggregation
+2026-08-17 15:45:02,817 - main - INFO - Fetching KPI summary
+2026-08-17 15:45:03,036 - main - INFO - Fetched churn-by-state aggregation
+2026-08-17 15:45:03,274 - main - INFO - Fetched customer page 1/9743 (25 rows, filters={})
+2026-08-17 15:45:03,277 - main - INFO - Fetched churn-by-age-bracket aggregation
+2026-08-17 15:45:04,746 - main - INFO - Fetched churn-by-state aggregation
+2026-08-17 15:45:05,133 - main - INFO - Fetched customer page 1/9743 (25 rows, filters={})
+2026-08-17 15:45:11,632 - main - INFO - Fetched risk-tier split
+2026-08-17 15:45:11,989 - main - INFO - Fetched risk-tier split
+2026-08-17 15:45:12,021 - main - INFO - Fetched churn-by-partner aggregation
+2026-08-17 15:45:12,153 - main - INFO - Fetching KPI summary
+2026-08-17 15:45:12,520 - main - INFO - Fetched churn-by-age-bracket aggregation
+2026-08-17 15:45:12,794 - main - INFO - Fetched churn-by-partner aggregation
+2026-08-17 15:45:13,042 - main - INFO - Fetching KPI summary
+2026-08-17 15:45:13,306 - main - INFO - Fetched churn-by-state aggregation
+2026-08-17 15:45:13,541 - main - INFO - Fetched customer page 1/9743 (25 rows, filters={})
+2026-08-17 15:45:13,709 - main - INFO - Fetched churn-by-age-bracket aggregation
+2026-08-17 15:45:15,332 - main - INFO - Fetched churn-by-state aggregation
+2026-08-17 15:45:15,762 - main - INFO - Fetched customer page 1/9743 (25 rows, filters={})
+2026-08-17 15:46:21,213 - main - INFO - Fetched customer detail: 18
+2026-08-17 15:46:32,127 - main - INFO - Fetched customer detail: 3
+2026-08-17 15:46:33,571 - main - INFO - Fetched customer detail: 3
+2026-08-17 15:46:46,901 - main - INFO - Fetched customer detail: 3
+2026-08-17 15:48:36,393 - main - INFO - Fetched risk-tier split
+2026-08-17 15:48:36,773 - main - INFO - Fetched risk-tier split
+2026-08-17 15:48:36,945 - main - INFO - Fetched churn-by-partner aggregation
+2026-08-17 15:48:37,052 - main - INFO - Fetching KPI summary
+2026-08-17 15:48:37,359 - main - INFO - Fetched churn-by-age-bracket aggregation
+2026-08-17 15:48:37,671 - main - INFO - Fetched churn-by-partner aggregation
+2026-08-17 15:48:37,930 - main - INFO - Fetching KPI summary
+2026-08-17 15:48:38,176 - main - INFO - Fetched churn-by-state aggregation
+2026-08-17 15:48:38,454 - main - INFO - Fetched customer page 1/9743 (25 rows, filters={})
+2026-08-17 15:48:38,642 - main - INFO - Fetched churn-by-age-bracket aggregation
+2026-08-17 15:48:40,237 - main - INFO - Fetched churn-by-state aggregation
+2026-08-17 15:48:40,714 - main - INFO - Fetched customer page 1/9743 (25 rows, filters={})
+2026-08-17 15:53:18,314 - main - INFO - Fetched risk-tier split
+2026-08-17 15:53:18,627 - main - INFO - Fetched risk-tier split
+2026-08-17 15:53:18,716 - main - INFO - Fetched churn-by-partner aggregation
+2026-08-17 15:53:18,744 - main - INFO - Fetching KPI summary
+2026-08-17 15:53:19,141 - main - INFO - Fetched churn-by-age-bracket aggregation
+2026-08-17 15:53:19,397 - main - INFO - Fetched churn-by-partner aggregation
+2026-08-17 15:53:19,542 - main - INFO - Fetching KPI summary
+2026-08-17 15:53:19,987 - main - INFO - Fetched churn-by-state aggregation
+2026-08-17 15:53:20,142 - main - INFO - Fetched customer page 1/9743 (25 rows, filters={})
+2026-08-17 15:53:20,211 - main - INFO - Fetched churn-by-age-bracket aggregation
+2026-08-17 15:53:21,853 - main - INFO - Fetched churn-by-state aggregation
+2026-08-17 15:53:22,256 - main - INFO - Fetched customer page 1/9743 (25 rows, filters={})
+2026-08-17 16:08:33,398 - main - INFO - Fetched risk-tier split
+2026-08-17 16:08:33,754 - main - INFO - Fetched risk-tier split
+2026-08-17 16:08:33,783 - main - INFO - Fetched churn-by-partner aggregation
+2026-08-17 16:08:33,954 - main - INFO - Fetching KPI summary
+2026-08-17 16:08:34,292 - main - INFO - Fetched churn-by-age-bracket aggregation
+2026-08-17 16:08:34,593 - main - INFO - Fetched churn-by-partner aggregation
+2026-08-17 16:08:34,912 - main - INFO - Fetching KPI summary
+2026-08-17 16:08:35,167 - main - INFO - Fetched churn-by-state aggregation
+2026-08-17 16:08:35,336 - main - INFO - Fetched customer page 1/9743 (25 rows, filters={})
+2026-08-17 16:08:35,514 - main - INFO - Fetched churn-by-age-bracket aggregation
+2026-08-17 16:08:37,376 - main - INFO - Fetched churn-by-state aggregation
+2026-08-17 16:08:37,766 - main - INFO - Fetched customer page 1/9743 (25 rows, filters={})
+2026-08-17 16:12:05,819 - main - INFO - Fetched risk-tier split
+2026-08-17 16:12:06,033 - main - INFO - Fetched churn-by-partner aggregation
+2026-08-17 16:12:06,127 - main - INFO - Fetching KPI summary
+2026-08-17 16:12:06,444 - main - INFO - Fetched churn-by-age-bracket aggregation
+2026-08-17 16:12:07,050 - main - INFO - Fetched churn-by-state aggregation
+2026-08-17 16:12:07,208 - main - INFO - Fetched customer page 1/9743 (25 rows, filters={})
+2026-08-17 16:12:08,486 - main - INFO - Fetched risk-tier split
+2026-08-17 16:12:08,841 - main - INFO - Fetched churn-by-partner aggregation
+2026-08-17 16:12:08,947 - main - INFO - Fetching KPI summary
+2026-08-17 16:12:09,302 - main - INFO - Fetched churn-by-age-bracket aggregation
+2026-08-17 16:12:10,157 - main - INFO - Fetched churn-by-state aggregation
+2026-08-17 16:12:10,328 - main - INFO - Fetched customer page 1/9743 (25 rows, filters={})
+2026-08-17 16:13:46,634 - main - INFO - Churn prediction request for customer: None
+2026-08-17 16:13:46,647 - main - INFO - Loaded fitted preprocessor: 11 features, 4 partner dummy columns, 6 scaled columns
+2026-08-17 16:13:47,329 - main - INFO - Loaded model: logistic_regression (logistic_regression.joblib)
+2026-08-17 16:13:51,190 - main - INFO - Loaded model: random_forest (random_forest.joblib)
+2026-08-17 16:13:51,401 - main - INFO - Loaded model: xgboost (xgboost_model.joblib)
+2026-08-17 16:13:51,767 - main - INFO - Churn prediction completed for customer None: Risk=Low, Probability=9.93%, Votes={'logistic_regression': 0, 'random_forest': 0, 'xgboost': 0}
+2026-08-17 16:15:32,849 - main - INFO - Fetched risk-tier split
+2026-08-17 16:15:33,113 - main - INFO - Fetched churn-by-partner aggregation
+2026-08-17 16:15:33,232 - main - INFO - Fetching KPI summary
+2026-08-17 16:15:33,489 - main - INFO - Fetched churn-by-age-bracket aggregation
+2026-08-17 16:15:34,161 - main - INFO - Fetched churn-by-state aggregation
+2026-08-17 16:15:34,291 - main - INFO - Fetched customer page 1/9743 (25 rows, filters={})
+2026-08-17 16:16:11,879 - main - INFO - Fetched risk-tier split
+2026-08-17 16:16:12,282 - main - INFO - Fetched churn-by-partner aggregation
+2026-08-17 16:16:12,360 - main - INFO - Fetching KPI summary
+2026-08-17 16:16:12,627 - main - INFO - Fetched churn-by-age-bracket aggregation
+2026-08-17 16:16:13,254 - main - INFO - Fetched churn-by-state aggregation
+2026-08-17 16:16:13,393 - main - INFO - Fetched customer page 1/9743 (25 rows, filters={})
+2026-08-17 16:16:31,380 - main - INFO - Fetched customer detail: 3
+2026-08-17 16:16:36,247 - main - INFO - Churn prediction request for customer: 3
+2026-08-17 16:16:36,380 - main - INFO - Churn prediction completed for customer 3: Risk=Low, Probability=9.60%, Votes={'logistic_regression': 0, 'random_forest': 0, 'xgboost': 0}
+2026-08-17 16:16:46,149 - main - INFO - Fetched customer detail: 12
+2026-08-17 16:16:54,569 - main - INFO - Churn prediction request for customer: 12
+2026-08-17 16:16:54,688 - main - INFO - Churn prediction completed for customer 12: Risk=Low, Probability=13.00%, Votes={'logistic_regression': 0, 'random_forest': 0, 'xgboost': 0}
+2026-08-17 16:17:15,602 - main - INFO - Fetched customer page 1/8 (25 rows, filters={'risk_categories': ['High Risk']})
+2026-08-17 16:17:16,287 - main - INFO - Fetched customer detail: 138682
+2026-08-17 16:17:24,262 - main - INFO - Churn prediction request for customer: 138682
+2026-08-17 16:17:24,396 - main - INFO - Churn prediction completed for customer 138682: Risk=Low, Probability=26.92%, Votes={'logistic_regression': 0, 'random_forest': 0, 'xgboost': 0}
+2026-08-17 16:18:04,193 - main - INFO - Fetched customer detail: 119346
+2026-08-17 16:19:09,835 - main - INFO - Fetched customer page 1/8 (25 rows, filters={'risk_categories': ['High Risk']})
+2026-08-17 16:19:09,837 - main - INFO - Fetched risk-tier split
+2026-08-17 16:19:10,155 - main - INFO - Fetched churn-by-partner aggregation
+2026-08-17 16:19:10,286 - main - INFO - Fetching KPI summary
+2026-08-17 16:19:10,701 - main - INFO - Fetched churn-by-age-bracket aggregation
+2026-08-17 16:19:11,482 - main - INFO - Fetched churn-by-state aggregation
+2026-08-17 16:19:34,787 - main - INFO - Fetched risk-tier split
+2026-08-17 16:19:34,799 - main - INFO - Fetched customer page 1/8 (25 rows, filters={'risk_categories': ['High Risk']})
+2026-08-17 16:19:35,014 - main - INFO - Fetched churn-by-partner aggregation
+2026-08-17 16:19:35,148 - main - INFO - Fetching KPI summary
+2026-08-17 16:19:35,365 - main - INFO - Fetched churn-by-age-bracket aggregation
+2026-08-17 16:19:36,018 - main - INFO - Fetched churn-by-state aggregation
+2026-08-17 16:19:49,789 - main - INFO - Fetched risk-tier split
+2026-08-17 16:19:49,837 - main - INFO - Fetched customer page 1/8 (25 rows, filters={'risk_categories': ['High Risk']})
+2026-08-17 16:19:50,063 - main - INFO - Fetched churn-by-partner aggregation
+2026-08-17 16:19:50,141 - main - INFO - Fetching KPI summary
+2026-08-17 16:19:50,446 - main - INFO - Fetched churn-by-age-bracket aggregation
+2026-08-17 16:19:50,923 - main - INFO - Fetched churn-by-state aggregation
+2026-08-17 16:19:52,527 - main - INFO - Fetched customer page 1/8 (25 rows, filters={'risk_categories': ['High Risk']})
+2026-08-17 16:19:52,565 - main - INFO - Fetched risk-tier split
+2026-08-17 16:19:52,902 - main - INFO - Fetched churn-by-partner aggregation
+2026-08-17 16:19:53,037 - main - INFO - Fetching KPI summary
+2026-08-17 16:19:53,478 - main - INFO - Fetched churn-by-age-bracket aggregation
+2026-08-17 16:19:54,210 - main - INFO - Fetched churn-by-state aggregation
+2026-08-17 16:20:21,818 - main - INFO - Fetched customer page 1/8 (25 rows, filters={'risk_categories': ['High Risk']})
+2026-08-17 16:20:21,878 - main - INFO - Fetched risk-tier split
+2026-08-17 16:20:22,182 - main - INFO - Fetched churn-by-partner aggregation
+2026-08-17 16:20:22,246 - main - INFO - Fetching KPI summary
+2026-08-17 16:20:22,448 - main - INFO - Fetched churn-by-age-bracket aggregation
+2026-08-17 16:20:23,108 - main - INFO - Fetched churn-by-state aggregation
+2026-08-17 16:31:09,880 - main - INFO - Fetched customer page 1/8 (25 rows, filters={'risk_categories': ['High Risk']})
+2026-08-17 16:31:09,887 - main - INFO - Fetched risk-tier split
+2026-08-17 16:31:10,259 - main - INFO - Fetched churn-by-partner aggregation
+2026-08-17 16:31:10,458 - main - INFO - Fetching KPI summary
+2026-08-17 16:31:10,825 - main - INFO - Fetched churn-by-age-bracket aggregation
+2026-08-17 16:31:11,729 - main - INFO - Fetched churn-by-state aggregation
+2026-08-17 16:33:18,473 - main - INFO - Fetched risk-tier split
+2026-08-17 16:33:18,825 - main - INFO - Fetched risk-tier split
+2026-08-17 16:33:18,892 - main - INFO - Fetched churn-by-partner aggregation
+2026-08-17 16:33:19,015 - main - INFO - Fetching KPI summary
+2026-08-17 16:33:19,385 - main - INFO - Fetched churn-by-age-bracket aggregation
+2026-08-17 16:33:19,583 - main - INFO - Fetched churn-by-partner aggregation
+2026-08-17 16:33:19,873 - main - INFO - Fetching KPI summary
+2026-08-17 16:33:20,102 - main - INFO - Fetched churn-by-state aggregation
+2026-08-17 16:33:20,323 - main - INFO - Fetched customer page 1/9743 (25 rows, filters={})
+2026-08-17 16:33:20,603 - main - INFO - Fetched churn-by-age-bracket aggregation
+2026-08-17 16:33:22,190 - main - INFO - Fetched churn-by-state aggregation
+2026-08-17 16:33:22,550 - main - INFO - Fetched customer page 1/9743 (25 rows, filters={})
+2026-08-17 16:34:28,889 - main - INFO - Fetched risk-tier split
+2026-08-17 16:34:29,169 - main - INFO - Fetched churn-by-partner aggregation
+2026-08-17 16:34:29,363 - main - INFO - Fetching KPI summary
+2026-08-17 16:34:29,558 - main - INFO - Fetched churn-by-age-bracket aggregation
+2026-08-17 16:34:30,449 - main - INFO - Fetched churn-by-state aggregation
+2026-08-17 16:34:30,610 - main - INFO - Fetched customer page 1/9743 (25 rows, filters={})

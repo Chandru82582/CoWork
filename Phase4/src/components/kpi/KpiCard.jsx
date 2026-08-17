@@ -1,6 +1,6 @@
 export default function KpiCard({ label, value, sublabel, accent }) {
   return (
-    <div className="panel" style={{ padding: 18, display: "flex", flexDirection: "column", gap: 6 }}>
+    <div className="panel" style={{ padding: 18, display: "flex", flexDirection: "column", gap: 6, background: "#182338" }}>
       <div className="eyebrow">{label}</div>
       <div
         className="mono"

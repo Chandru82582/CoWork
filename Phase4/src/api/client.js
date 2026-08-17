@@ -64,3 +64,7 @@ export const fetchRiskTierSplit = () =>
 //   apiClient
 //     .get("/dashboard/analytics/registration-heatmap", { params: { days } })
 //     .then((r) => r.data);
+
+// ---- ML prediction ----
+export const predictChurn = (payload) =>
+  apiClient.post("/ml/predict-churn", payload).then((r) => r.data);

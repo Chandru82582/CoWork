@@ -15,6 +15,8 @@ from schemas import (
 )
 from rules import get_churn_summary as get_churn_summary_service
 from rules import get_customer_by_id, get_high_risk_customers
+from ml_model import predict_churn_ensemble
+
 from dashboard_routes import router as dashboard_router
 
 # --- Logging Setup ---
@@ -127,53 +129,39 @@ def predict_churn_endpoint(
     current_user: dict = Depends(get_current_admin_user),
 ):
     """
-    **[PLACEHOLDER FOR FUTURE ML MODEL INTEGRATION]**
-    
-    Predict churn probability for a customer based on provided features.
-    
-    This endpoint is designed to integrate with a trained machine learning model.
-    Currently returns a dummy prediction for testing purposes.
-    
-    **Input Features:**
-    - age: Customer age
-    - gender: Customer gender (Male/Female/Other)
-    - tenure: Months as a customer
-    - num_dependents: Number of dependents
-    - estimated_salary: Annual salary estimate
-    - calls_made: Number of calls made
-    - sms_sent: Number of SMS sent
-    - data_used: Data usage in GB
-    - telecom_partner: Telecom partner name
-    - pincode: Customer location pincode
-    
-    **Output:**
-    - churn_probability: Probability of churn (0.0-1.0)
-    - churn_prediction: Binary prediction (True/False)
-    - confidence_score: Confidence of prediction (0.0-1.0)
-    - risk_level: Risk categorization (Low/Medium/High)
-    - recommendation: Recommended action
+    Predict churn probability for a customer using a 3-model majority vote
+    (logistic regression, random forest, xgboost).
     """
     logger.info(f"Churn prediction request for customer: {features.customer_id}")
     logger.debug(f"Features provided: {features.dict()}")
-    
-    # TODO: Replace with actual ML model prediction
-    # This is a placeholder that returns dummy predictions
-    dummy_prediction = ChurnPredictionOutput(
+
+    try:
+        result = predict_churn_ensemble(features)
+    except FileNotFoundError as e:
+        logger.error(f"Model artifacts missing: {e}")
+        raise HTTPException(status_code=503, detail="Prediction models are unavailable. Contact an administrator.")
+    except Exception as e:
+        logger.error(f"Prediction failed for customer {features.customer_id}: {e}")
+        raise HTTPException(status_code=500, detail="Prediction failed.")
+
+    prediction = ChurnPredictionOutput(
         customer_id=features.customer_id,
-        churn_probability=0.35,  # Placeholder value
-        churn_prediction=False,  # Placeholder value
-        confidence_score=0.82,  # Placeholder value
-        risk_level="Medium",  # Placeholder value
-        recommendation="Monitor customer engagement and consider retention offers",
+        churn_probability=result["churn_probability"],
+        churn_prediction=result["churn_prediction"],
+        confidence_score=result["confidence_score"],
+        risk_level=result["risk_level"],
+        recommendation=result["recommendation"],
+        model_votes=result["model_votes"],
     )
-    
+
     logger.info(
         f"Churn prediction completed for customer {features.customer_id}: "
-        f"Risk={dummy_prediction.risk_level}, "
-        f"Probability={dummy_prediction.churn_probability:.2%}"
+        f"Risk={prediction.risk_level}, "
+        f"Probability={prediction.churn_probability:.2%}, "
+        f"Votes={result['model_votes']}"
     )
-    
-    return dummy_prediction
+
+    return prediction
 
 
 @app.get("/health")

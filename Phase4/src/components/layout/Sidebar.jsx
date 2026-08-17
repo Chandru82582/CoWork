@@ -3,6 +3,7 @@ import { useAuth } from "../../hooks/useAuth.js";
 const NAV_ITEMS = [
   { key: "overview", label: "Overview" },
   { key: "customers", label: "Customers" },
+  { key: "predict", label: "Predict churn" },
 ];
 
 export default function Sidebar({ active, onNavigate }) {
