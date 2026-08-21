@@ -364,5 +364,5 @@ def main() -> None:
         print(result.to_string(index=False))
 
 
-# if __name__ == "__main__":
-#     main()
+if __name__ == "__main__":
+    main()
