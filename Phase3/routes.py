@@ -20,7 +20,7 @@ from auth import get_current_admin_user
 #     RiskTierSplitItem, TreemapNode, RegistrationHeatmapResponse, CustomerFilters,
 # )
 
-from dashboard_schemas import (
+from schemas import (
     KpiSummaryResponse, PaginatedCustomerResponse, CustomerDetailResponse,
     ChurnByPartnerItem, ChurnByAgeBracketItem,ChurnByStateItem,
     RiskTierSplitItem, CustomerFilters,

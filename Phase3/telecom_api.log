@@ -862,3 +862,46 @@
 2026-08-17 16:34:29,558 - main - INFO - Fetched churn-by-age-bracket aggregation
 2026-08-17 16:34:30,449 - main - INFO - Fetched churn-by-state aggregation
 2026-08-17 16:34:30,610 - main - INFO - Fetched customer page 1/9743 (25 rows, filters={})
+2026-08-21 09:38:28,513 - main - INFO - ==================================================
+2026-08-21 09:38:28,515 - main - INFO - Telecom Customer API Starting Up
+2026-08-21 09:38:28,515 - main - INFO - Timestamp: 2026-08-21 09:38:28.515499
+2026-08-21 09:38:28,515 - main - INFO - ==================================================
+2026-08-21 09:38:56,020 - main - INFO - Fetched risk-tier split
+2026-08-21 09:38:56,361 - main - INFO - Fetched risk-tier split
+2026-08-21 09:38:56,578 - main - INFO - Fetched churn-by-partner aggregation
+2026-08-21 09:38:56,649 - main - INFO - Fetching KPI summary
+2026-08-21 09:38:56,965 - main - INFO - Fetched churn-by-age-bracket aggregation
+2026-08-21 09:38:57,266 - main - INFO - Fetched churn-by-partner aggregation
+2026-08-21 09:38:57,373 - main - INFO - Fetching KPI summary
+2026-08-21 09:38:57,730 - main - INFO - Fetched churn-by-state aggregation
+2026-08-21 09:38:57,848 - main - INFO - Fetched customer page 1/9743 (25 rows, filters={})
+2026-08-21 09:38:58,030 - main - INFO - Fetched churn-by-age-bracket aggregation
+2026-08-21 09:38:59,823 - main - INFO - Fetched churn-by-state aggregation
+2026-08-21 09:39:00,192 - main - INFO - Fetched customer page 1/9743 (25 rows, filters={})
+2026-08-21 09:39:10,437 - main - INFO - Fetched customer detail: 3
+2026-08-21 09:39:17,504 - main - INFO - Churn prediction request for customer: 3
+2026-08-21 09:39:17,551 - main - INFO - Loaded fitted preprocessor: 11 features, 4 partner dummy columns, 6 scaled columns
+2026-08-21 09:39:17,785 - main - INFO - Loaded model: logistic_regression (logistic_regression.joblib)
+2026-08-21 09:39:19,762 - main - INFO - Loaded model: random_forest (random_forest.joblib)
+2026-08-21 09:39:19,845 - main - INFO - Loaded model: xgboost (xgboost_model.joblib)
+2026-08-21 09:39:19,946 - main - INFO - Churn prediction completed for customer 3: Risk=High, Probability=69.85%, Votes={'logistic_regression': 1, 'random_forest': 1, 'xgboost': 1}
+2026-08-21 09:40:43,235 - main - INFO - Fetched customer detail: 3
+2026-08-21 09:40:53,312 - main - INFO - Churn prediction request for customer: 3
+2026-08-21 09:40:53,443 - main - INFO - Churn prediction completed for customer 3: Risk=High, Probability=69.85%, Votes={'logistic_regression': 1, 'random_forest': 1, 'xgboost': 1}
+2026-08-21 09:42:21,550 - main - INFO - Login attempt for user: admin
+2026-08-21 09:42:22,260 - main - INFO - Fetched risk-tier split
+2026-08-21 09:42:22,593 - main - INFO - Fetched churn-by-partner aggregation
+2026-08-21 09:42:22,611 - main - INFO - Fetching KPI summary
+2026-08-21 09:42:22,633 - main - INFO - Fetched risk-tier split
+2026-08-21 09:42:23,243 - main - INFO - Fetched churn-by-age-bracket aggregation
+2026-08-21 09:42:23,426 - main - INFO - Fetched churn-by-partner aggregation
+2026-08-21 09:42:23,582 - main - INFO - Fetching KPI summary
+2026-08-21 09:42:23,988 - main - INFO - Fetched churn-by-state aggregation
+2026-08-21 09:42:24,228 - main - INFO - Fetched customer page 1/9743 (25 rows, filters={})
+2026-08-21 09:42:24,461 - main - INFO - Fetched churn-by-age-bracket aggregation
+2026-08-21 09:42:26,176 - main - INFO - Fetched churn-by-state aggregation
+2026-08-21 09:42:26,629 - main - INFO - Fetched customer page 1/9743 (25 rows, filters={})
+2026-08-21 09:42:34,178 - main - INFO - ==================================================
+2026-08-21 09:42:34,179 - main - INFO - Telecom Customer API Shutting Down
+2026-08-21 09:42:34,179 - main - INFO - Timestamp: 2026-08-21 09:42:34.179786
+2026-08-21 09:42:34,180 - main - INFO - ==================================================

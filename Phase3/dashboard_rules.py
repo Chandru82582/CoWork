@@ -21,7 +21,7 @@ from database import get_db, Customer, TelecomPartner, Location, CustomerUsage
 #     CustomerFilters,
 # )
 
-from dashboard_schemas import (
+from schemas import (
     KpiSummaryResponse, KpiTrend,
     CustomerListItem, PaginationMeta, PaginatedCustomerResponse,
     CustomerDetailResponse, UsageBreakdown, RiskFactorBreakdown,

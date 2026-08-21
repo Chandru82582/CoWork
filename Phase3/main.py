@@ -17,7 +17,7 @@ from rules import get_churn_summary as get_churn_summary_service
 from rules import get_customer_by_id, get_high_risk_customers
 from ml_model import predict_churn_ensemble
 
-from dashboard_routes import router as dashboard_router
+from Phase3.routes import router as dashboard_router
 
 # --- Logging Setup ---
 logging.basicConfig(
