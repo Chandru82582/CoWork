@@ -1,6 +1,6 @@
 from __future__ import annotations
 from pydantic import BaseModel, ConfigDict
-from typing import Optional
+from typing import Optional, Any
 
 
 class CustomerResponse(BaseModel):
@@ -249,3 +249,26 @@ class CustomerFilters(BaseModel):
     age_min: Optional[int] = None
     age_max: Optional[int] = None
     search: Optional[str] = None  # matches customer_id (exact) or city (partial)
+
+
+# ---------- Assistant Chat Schemas ----------
+
+class ChatMessage(BaseModel):
+    role: str  # "user" | "assistant" | "system"
+    content: str
+
+
+class ToolCallRecord(BaseModel):
+    tool: str
+    arguments: dict[str, Any] = {}
+    result: Any = None
+
+
+class AssistantChatRequest(BaseModel):
+    messages: list[ChatMessage]  # bounded list of conversation turns
+
+
+class AssistantChatResponse(BaseModel):
+    role: str = "assistant"
+    content: str
+    tool_calls: list[ToolCallRecord] = []

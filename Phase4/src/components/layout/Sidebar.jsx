@@ -4,6 +4,7 @@ const NAV_ITEMS = [
   { key: "overview", label: "Overview" },
   { key: "customers", label: "Customers" },
   { key: "predict", label: "Predict churn" },
+  { key: "assistant", label: "AI Assistant" },
 ];
 
 export default function Sidebar({ active, onNavigate }) {

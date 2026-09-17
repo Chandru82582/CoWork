@@ -68,3 +68,7 @@ export const fetchRiskTierSplit = () =>
 // ---- ML prediction ----
 export const predictChurn = (payload) =>
   apiClient.post("/ml/predict-churn", payload).then((r) => r.data);
+
+// ---- AI Assistant ----
+export const sendAssistantChat = (messages) =>
+  apiClient.post("/assistant/chat", { messages }).then((r) => r.data);

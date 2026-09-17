@@ -11,6 +11,7 @@ import FilterBar from "../components/filters/FilterBar.jsx";
 import CustomerTable from "../components/table/CustomerTable.jsx";
 import CustomerDetailDrawer from "../components/drawer/CustomerDetailDrawer.jsx";
 import PredictionPage from "./PredictionPage.jsx";
+import AssistantPage from "./AssistantPage.jsx";
 import { useAnalytics } from "../hooks/useAnalytics.js";
 import { useCustomers } from "../hooks/useCustomers.js";
 
@@ -92,7 +93,7 @@ const pieChartConfig = {
 };
   return (
     <DashboardLayout active={active} onNavigate={setActive}>
-      {active !== "predict" && (
+      {active !== "predict" && active !== "assistant" && (
         <header style={{ marginBottom: 20 }}>
           <div className="eyebrow">OVERVIEW</div>
           <h1 style={{ margin: "4px 0 0", fontSize: 24 }}>Churn & risk console</h1>
@@ -100,6 +101,7 @@ const pieChartConfig = {
       )}
 
       {active === "predict" && <PredictionPage prefill={predictPrefill} />}
+      {active === "assistant" && <AssistantPage />}
       
       {/* <header style={{ marginBottom: 20 }}>
         <div className="eyebrow">OVERVIEW</div>

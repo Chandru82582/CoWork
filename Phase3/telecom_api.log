@@ -905,3 +905,317 @@
 2026-08-21 09:42:34,179 - main - INFO - Telecom Customer API Shutting Down
 2026-08-21 09:42:34,179 - main - INFO - Timestamp: 2026-08-21 09:42:34.179786
 2026-08-21 09:42:34,180 - main - INFO - ==================================================
+2026-08-27 11:56:13,751 - main - INFO - ==================================================
+2026-08-27 11:56:13,752 - main - INFO - Telecom Customer API Starting Up
+2026-08-27 11:56:13,752 - main - INFO - Timestamp: 2026-08-27 11:56:13.752209
+2026-08-27 11:56:13,752 - main - INFO - ==================================================
+2026-08-27 11:56:37,239 - main - INFO - Fetched risk-tier split
+2026-08-27 11:56:37,613 - main - INFO - Fetched risk-tier split
+2026-08-27 11:56:37,809 - main - INFO - Fetched churn-by-partner aggregation
+2026-08-27 11:56:37,842 - main - INFO - Fetching KPI summary
+2026-08-27 11:56:38,257 - main - INFO - Fetched churn-by-age-bracket aggregation
+2026-08-27 11:56:38,605 - main - INFO - Fetched churn-by-partner aggregation
+2026-08-27 11:56:38,671 - main - INFO - Fetching KPI summary
+2026-08-27 11:56:39,006 - main - INFO - Fetched churn-by-state aggregation
+2026-08-27 11:56:39,251 - main - INFO - Fetched customer page 1/9743 (25 rows, filters={})
+2026-08-27 11:56:39,492 - main - INFO - Fetched churn-by-age-bracket aggregation
+2026-08-27 11:56:41,046 - main - INFO - Fetched churn-by-state aggregation
+2026-08-27 11:56:41,557 - main - INFO - Fetched customer page 1/9743 (25 rows, filters={})
+2026-08-27 11:56:47,565 - main - INFO - Fetched risk-tier split
+2026-08-27 11:56:47,844 - main - INFO - Fetched risk-tier split
+2026-08-27 11:56:47,862 - main - INFO - Fetched churn-by-partner aggregation
+2026-08-27 11:56:47,994 - main - INFO - Fetching KPI summary
+2026-08-27 11:56:48,240 - main - INFO - Fetched churn-by-age-bracket aggregation
+2026-08-27 11:56:48,447 - main - INFO - Fetched churn-by-partner aggregation
+2026-08-27 11:56:48,687 - main - INFO - Fetching KPI summary
+2026-08-27 11:56:49,186 - main - INFO - Fetched churn-by-state aggregation
+2026-08-27 11:56:49,217 - main - INFO - Fetched customer page 1/9743 (25 rows, filters={})
+2026-08-27 11:56:49,320 - main - INFO - Fetched churn-by-age-bracket aggregation
+2026-08-27 11:56:51,297 - main - INFO - Fetched churn-by-state aggregation
+2026-08-27 11:56:51,425 - main - INFO - Fetched customer page 1/9743 (25 rows, filters={})
+2026-08-27 11:57:19,714 - main - INFO - Fetched customer detail: 5
+2026-08-27 11:57:20,660 - main - INFO - Fetched customer detail: 5
+2026-08-27 11:57:28,925 - main - INFO - Churn prediction request for customer: 5
+2026-08-27 11:57:28,954 - main - INFO - Loaded fitted preprocessor: 11 features, 4 partner dummy columns, 6 scaled columns
+2026-08-27 11:57:29,525 - main - INFO - Loaded model: logistic_regression (logistic_regression.joblib)
+2026-08-27 11:57:33,631 - main - INFO - Loaded model: random_forest (random_forest.joblib)
+2026-08-27 11:57:33,791 - main - INFO - Loaded model: xgboost (xgboost_model.joblib)
+2026-08-27 11:57:33,986 - main - INFO - Churn prediction completed for customer 5: Risk=Medium, Probability=38.14%, Votes={'logistic_regression': 1, 'random_forest': 0, 'xgboost': 1}
+2026-08-27 11:59:09,907 - main - INFO - Login attempt for user: admin
+2026-08-27 11:59:10,528 - main - INFO - Fetched churn-by-partner aggregation
+2026-08-27 11:59:10,532 - main - INFO - Fetched risk-tier split
+2026-08-27 11:59:10,828 - main - INFO - Fetched risk-tier split
+2026-08-27 11:59:10,992 - main - INFO - Fetching KPI summary
+2026-08-27 11:59:11,329 - main - INFO - Fetched churn-by-partner aggregation
+2026-08-27 11:59:11,457 - main - INFO - Fetched churn-by-age-bracket aggregation
+2026-08-27 11:59:11,937 - main - INFO - Fetching KPI summary
+2026-08-27 11:59:12,319 - main - INFO - Fetched churn-by-state aggregation
+2026-08-27 11:59:12,424 - main - INFO - Fetched customer page 1/9743 (25 rows, filters={})
+2026-08-27 11:59:12,697 - main - INFO - Fetched churn-by-age-bracket aggregation
+2026-08-27 11:59:14,353 - main - INFO - Fetched churn-by-state aggregation
+2026-08-27 11:59:14,595 - main - INFO - Fetched customer page 1/9743 (25 rows, filters={})
+2026-08-27 11:59:29,316 - main - INFO - Fetched customer detail: 13
+2026-08-27 11:59:56,113 - main - INFO - Churn prediction request for customer: 13
+2026-08-27 11:59:56,228 - main - INFO - Churn prediction completed for customer 13: Risk=Medium, Probability=37.51%, Votes={'logistic_regression': 1, 'random_forest': 0, 'xgboost': 0}
+2026-08-27 12:41:45,266 - main - INFO - Fetched risk-tier split
+2026-08-27 12:41:45,458 - main - INFO - Fetched churn-by-partner aggregation
+2026-08-27 12:41:45,478 - main - INFO - Fetched risk-tier split
+2026-08-27 12:41:45,546 - main - INFO - Fetching KPI summary
+2026-08-27 12:41:45,857 - main - INFO - Fetched churn-by-age-bracket aggregation
+2026-08-27 12:41:46,049 - main - INFO - Fetched churn-by-partner aggregation
+2026-08-27 12:41:46,231 - main - INFO - Fetching KPI summary
+2026-08-27 12:41:46,619 - main - INFO - Fetched churn-by-state aggregation
+2026-08-27 12:41:46,683 - main - INFO - Fetched customer page 1/9743 (25 rows, filters={})
+2026-08-27 12:41:46,683 - main - INFO - Fetched churn-by-age-bracket aggregation
+2026-08-27 12:41:48,417 - main - INFO - Fetched churn-by-state aggregation
+2026-08-27 12:41:48,604 - main - INFO - Fetched customer page 1/9743 (25 rows, filters={})
+2026-08-27 12:42:56,929 - main - INFO - Fetched risk-tier split
+2026-08-27 12:42:57,269 - main - INFO - Fetched risk-tier split
+2026-08-27 12:42:57,328 - main - INFO - Fetched churn-by-partner aggregation
+2026-08-27 12:42:57,445 - main - INFO - Fetching KPI summary
+2026-08-27 12:42:57,883 - main - INFO - Fetched churn-by-age-bracket aggregation
+2026-08-27 12:42:57,995 - main - INFO - Fetched churn-by-partner aggregation
+2026-08-27 12:42:58,235 - main - INFO - Fetching KPI summary
+2026-08-27 12:42:58,631 - main - INFO - Fetched churn-by-state aggregation
+2026-08-27 12:42:58,749 - main - INFO - Fetched customer page 1/9743 (25 rows, filters={})
+2026-08-27 12:42:58,980 - main - INFO - Fetched churn-by-age-bracket aggregation
+2026-08-27 12:43:00,657 - main - INFO - Fetched churn-by-state aggregation
+2026-08-27 12:43:00,983 - main - INFO - Fetched customer page 1/9743 (25 rows, filters={})
+2026-08-27 13:27:55,993 - main - INFO - Fetched risk-tier split
+2026-08-27 13:27:56,268 - main - INFO - Fetched risk-tier split
+2026-08-27 13:27:56,304 - main - INFO - Fetched churn-by-partner aggregation
+2026-08-27 13:27:56,431 - main - INFO - Fetching KPI summary
+2026-08-27 13:27:56,617 - main - INFO - Fetched churn-by-age-bracket aggregation
+2026-08-27 13:27:57,399 - main - INFO - Fetched churn-by-state aggregation
+2026-08-27 13:27:57,413 - main - INFO - Fetched customer page 1/9743 (25 rows, filters={})
+2026-08-27 13:27:59,034 - main - INFO - Fetched churn-by-partner aggregation
+2026-08-27 13:27:59,137 - main - INFO - Fetching KPI summary
+2026-08-27 13:27:59,373 - main - INFO - Fetched churn-by-age-bracket aggregation
+2026-08-27 13:28:00,290 - main - INFO - Fetched churn-by-state aggregation
+2026-08-27 13:28:00,357 - main - INFO - Fetched customer page 1/9743 (25 rows, filters={})
+2026-08-27 15:06:23,719 - main - INFO - Fetched risk-tier split
+2026-08-27 15:06:24,095 - main - INFO - Fetched risk-tier split
+2026-08-27 15:06:24,201 - main - INFO - Fetched churn-by-partner aggregation
+2026-08-27 15:06:24,369 - main - INFO - Fetching KPI summary
+2026-08-27 15:06:24,716 - main - INFO - Fetched churn-by-age-bracket aggregation
+2026-08-27 15:06:24,982 - main - INFO - Fetched churn-by-partner aggregation
+2026-08-27 15:06:25,254 - main - INFO - Fetching KPI summary
+2026-08-27 15:06:25,638 - main - INFO - Fetched churn-by-state aggregation
+2026-08-27 15:06:25,860 - main - INFO - Fetched customer page 1/9743 (25 rows, filters={})
+2026-08-27 15:06:25,974 - main - INFO - Fetched churn-by-age-bracket aggregation
+2026-08-27 15:06:27,774 - main - INFO - Fetched churn-by-state aggregation
+2026-08-27 15:06:28,200 - main - INFO - Fetched customer page 1/9743 (25 rows, filters={})
+2026-08-27 19:36:57,178 - main - INFO - Fetched risk-tier split
+2026-08-27 19:36:57,465 - main - INFO - Fetched risk-tier split
+2026-08-27 19:36:57,556 - main - INFO - Fetched churn-by-partner aggregation
+2026-08-27 19:36:57,623 - main - INFO - Fetching KPI summary
+2026-08-27 19:36:57,903 - main - INFO - Fetched churn-by-age-bracket aggregation
+2026-08-27 19:36:58,118 - main - INFO - Fetched churn-by-partner aggregation
+2026-08-27 19:36:58,235 - main - INFO - Fetching KPI summary
+2026-08-27 19:36:58,728 - main - INFO - Fetched churn-by-state aggregation
+2026-08-27 19:36:58,802 - main - INFO - Fetched customer page 1/9743 (25 rows, filters={})
+2026-08-27 19:36:58,822 - main - INFO - Fetched churn-by-age-bracket aggregation
+2026-08-27 19:37:00,295 - main - INFO - Fetched churn-by-state aggregation
+2026-08-27 19:37:00,439 - main - INFO - Fetched customer page 1/9743 (25 rows, filters={})
+2026-08-27 19:40:00,193 - main - INFO - ==================================================
+2026-08-27 19:40:00,193 - main - INFO - Telecom Customer API Shutting Down
+2026-08-27 19:40:00,194 - main - INFO - Timestamp: 2026-08-27 19:40:00.194120
+2026-08-27 19:40:00,194 - main - INFO - ==================================================
+2026-09-13 16:41:04,502 - main - INFO - Assistant chat request with 1 bounded turns
+2026-09-13 16:41:05,596 - main - INFO - Fetching KPI summary
+2026-09-13 16:41:06,618 - httpx2 - INFO - HTTP Request: POST http://testserver/assistant/chat "HTTP/1.1 200 OK"
+2026-09-13 16:48:04,749 - main - INFO - Assistant chat request with 1 bounded turns
+2026-09-13 16:48:07,022 - main - INFO - Fetched customer page 1/48711 (5 rows, filters={})
+2026-09-13 16:48:07,029 - httpx2 - INFO - HTTP Request: POST http://testserver/assistant/chat "HTTP/1.1 200 OK"
+2026-09-13 16:48:07,039 - main - INFO - Assistant chat request with 1 bounded turns
+2026-09-13 16:48:07,989 - main - INFO - Fetching KPI summary
+2026-09-13 16:48:07,996 - httpx2 - INFO - HTTP Request: POST http://testserver/assistant/chat "HTTP/1.1 200 OK"
+2026-09-13 16:48:08,010 - main - INFO - Assistant chat request with 1 bounded turns
+2026-09-13 16:48:08,994 - main - INFO - Fetching KPI summary
+2026-09-13 16:48:09,002 - httpx2 - INFO - HTTP Request: POST http://testserver/assistant/chat "HTTP/1.1 200 OK"
+2026-09-13 16:48:09,013 - main - INFO - Assistant chat request with 8 bounded turns
+2026-09-13 16:48:09,888 - main - INFO - Fetching KPI summary
+2026-09-13 16:48:10,802 - httpx2 - INFO - HTTP Request: POST http://testserver/assistant/chat "HTTP/1.1 200 OK"
+2026-09-13 16:48:10,810 - main - INFO - Assistant chat request with 1 bounded turns
+2026-09-13 16:48:10,814 - httpx2 - INFO - HTTP Request: POST http://testserver/assistant/chat "HTTP/1.1 200 OK"
+2026-09-13 16:50:08,551 - main - INFO - ==================================================
+2026-09-13 16:50:08,552 - main - INFO - Telecom Customer API Starting Up
+2026-09-13 16:50:08,552 - main - INFO - Timestamp: 2026-09-13 16:50:08.552281
+2026-09-13 16:50:08,552 - main - INFO - ==================================================
+2026-09-13 16:50:08,553 - main - INFO - ==================================================
+2026-09-13 16:50:08,553 - main - INFO - Telecom Customer API Shutting Down
+2026-09-13 16:50:08,553 - main - INFO - Timestamp: 2026-09-13 16:50:08.553862
+2026-09-13 16:50:08,554 - main - INFO - ==================================================
+2026-09-13 17:13:11,707 - main - INFO - ==================================================
+2026-09-13 17:13:11,708 - main - INFO - Telecom Customer API Starting Up
+2026-09-13 17:13:11,708 - main - INFO - Timestamp: 2026-09-13 17:13:11.708960
+2026-09-13 17:13:11,709 - main - INFO - ==================================================
+2026-09-13 17:13:15,463 - main - INFO - Fetched risk-tier split
+2026-09-13 17:13:15,833 - main - INFO - Fetched risk-tier split
+2026-09-13 17:13:15,888 - main - INFO - Fetched churn-by-partner aggregation
+2026-09-13 17:13:16,082 - main - INFO - Fetching KPI summary
+2026-09-13 17:13:16,421 - main - INFO - Fetched churn-by-age-bracket aggregation
+2026-09-13 17:13:16,669 - main - INFO - Fetched churn-by-partner aggregation
+2026-09-13 17:13:17,043 - main - INFO - Fetching KPI summary
+2026-09-13 17:13:17,190 - main - INFO - Fetched churn-by-state aggregation
+2026-09-13 17:13:17,366 - main - INFO - Fetched customer page 1/9743 (25 rows, filters={})
+2026-09-13 17:13:17,620 - main - INFO - Fetched churn-by-age-bracket aggregation
+2026-09-13 17:13:19,270 - main - INFO - Fetched churn-by-state aggregation
+2026-09-13 17:13:19,674 - main - INFO - Fetched customer page 1/9743 (25 rows, filters={})
+2026-09-13 17:13:31,573 - main - INFO - Fetched risk-tier split
+2026-09-13 17:13:31,964 - main - INFO - Fetched risk-tier split
+2026-09-13 17:13:31,997 - main - INFO - Fetched churn-by-partner aggregation
+2026-09-13 17:13:32,199 - main - INFO - Fetching KPI summary
+2026-09-13 17:13:32,499 - main - INFO - Fetched churn-by-age-bracket aggregation
+2026-09-13 17:13:32,760 - main - INFO - Fetched churn-by-partner aggregation
+2026-09-13 17:13:33,177 - main - INFO - Fetching KPI summary
+2026-09-13 17:13:33,336 - main - INFO - Fetched churn-by-state aggregation
+2026-09-13 17:13:33,580 - main - INFO - Fetched customer page 1/9743 (25 rows, filters={})
+2026-09-13 17:13:33,794 - main - INFO - Fetched churn-by-age-bracket aggregation
+2026-09-13 17:13:35,417 - main - INFO - Fetched churn-by-state aggregation
+2026-09-13 17:13:35,782 - main - INFO - Fetched customer page 1/9743 (25 rows, filters={})
+2026-09-13 17:15:04,423 - main - INFO - Assistant chat request with 2 bounded turns
+2026-09-13 17:15:05,407 - main - INFO - Fetching KPI summary
+2026-09-13 18:15:08,959 - main - INFO - Fetched risk-tier split
+2026-09-13 18:15:09,050 - main - INFO - Fetched churn-by-partner aggregation
+2026-09-13 18:15:09,151 - main - INFO - Fetched risk-tier split
+2026-09-13 18:15:09,292 - main - INFO - Fetching KPI summary
+2026-09-13 18:15:09,518 - main - INFO - Fetched churn-by-partner aggregation
+2026-09-13 18:15:09,671 - main - INFO - Fetched churn-by-age-bracket aggregation
+2026-09-13 18:15:09,882 - main - INFO - Fetching KPI summary
+2026-09-13 18:15:10,282 - main - INFO - Fetched churn-by-state aggregation
+2026-09-13 18:15:10,536 - main - INFO - Fetched churn-by-age-bracket aggregation
+2026-09-13 18:15:10,971 - main - INFO - Fetched customer page 1/9743 (25 rows, filters={})
+2026-09-13 18:15:12,271 - main - INFO - Fetched churn-by-state aggregation
+2026-09-13 18:15:13,162 - main - INFO - Fetched customer page 1/9743 (25 rows, filters={})
+2026-09-13 21:54:02,332 - main - INFO - Fetched risk-tier split
+2026-09-13 21:54:02,597 - main - INFO - Fetched churn-by-partner aggregation
+2026-09-13 21:54:02,629 - main - INFO - Fetched risk-tier split
+2026-09-13 21:54:02,716 - main - INFO - Fetching KPI summary
+2026-09-13 21:54:03,040 - main - INFO - Fetched churn-by-age-bracket aggregation
+2026-09-13 21:54:03,339 - main - INFO - Fetched churn-by-partner aggregation
+2026-09-13 21:54:03,554 - main - INFO - Fetching KPI summary
+2026-09-13 21:54:04,046 - main - INFO - Fetched churn-by-state aggregation
+2026-09-13 21:54:04,101 - main - INFO - Fetched customer page 1/9743 (25 rows, filters={})
+2026-09-13 21:54:04,136 - main - INFO - Fetched churn-by-age-bracket aggregation
+2026-09-13 21:54:06,092 - main - INFO - Fetched churn-by-state aggregation
+2026-09-13 21:54:06,335 - main - INFO - Fetched customer page 1/9743 (25 rows, filters={})
+2026-09-13 22:00:36,201 - main - INFO - Assistant chat request with 2 bounded turns
+2026-09-13 22:00:37,263 - main - INFO - Fetching KPI summary
+2026-09-13 22:37:03,159 - main - INFO - Fetched risk-tier split
+2026-09-13 22:37:03,529 - main - INFO - Fetched risk-tier split
+2026-09-13 22:37:03,531 - main - INFO - Fetched churn-by-partner aggregation
+2026-09-13 22:37:03,687 - main - INFO - Fetching KPI summary
+2026-09-13 22:37:04,068 - main - INFO - Fetched churn-by-age-bracket aggregation
+2026-09-13 22:37:04,273 - main - INFO - Fetched churn-by-partner aggregation
+2026-09-13 22:37:04,493 - main - INFO - Fetching KPI summary
+2026-09-13 22:37:04,864 - main - INFO - Fetched churn-by-state aggregation
+2026-09-13 22:37:05,011 - main - INFO - Fetched customer page 1/9743 (25 rows, filters={})
+2026-09-13 22:37:05,193 - main - INFO - Fetched churn-by-age-bracket aggregation
+2026-09-13 22:37:07,078 - main - INFO - Fetched churn-by-state aggregation
+2026-09-13 22:37:07,358 - main - INFO - Fetched customer page 1/9743 (25 rows, filters={})
+2026-09-13 22:47:25,752 - main - INFO - Assistant chat request with 1 bounded turns
+2026-09-13 22:47:25,753 - main - INFO - Using Anthropic API key from .env for assistant chat turn
+2026-09-13 22:47:38,055 - anthropic._base_client - INFO - Retrying request to /v1/messages in 0.473258 seconds
+2026-09-13 22:47:40,741 - httpx2 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-09-13 22:47:40,744 - main - WARNING - Claude 3.5 Sonnet request failed: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011Cf1pT8iuoWEaKUPjv8AQk'}. Trying Claude 3 Haiku fallback.
+2026-09-13 22:47:41,480 - httpx2 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-09-13 22:47:41,481 - main - WARNING - Anthropic API call failed (Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011Cf1pTBT7c6deuW5CRfaCj'}), falling back to internal engine
+2026-09-13 22:47:43,475 - main - INFO - Fetched customer page 1/48711 (5 rows, filters={})
+2026-09-13 22:47:43,480 - httpx2 - INFO - HTTP Request: POST http://testserver/assistant/chat "HTTP/1.1 200 OK"
+2026-09-13 22:47:43,495 - main - INFO - Assistant chat request with 1 bounded turns
+2026-09-13 22:47:43,497 - main - INFO - Using Anthropic API key from .env for assistant chat turn
+2026-09-13 22:47:45,595 - httpx2 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-09-13 22:47:45,595 - main - WARNING - Claude 3.5 Sonnet request failed: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011Cf1pTVCThRNPt9SsUBMTt'}. Trying Claude 3 Haiku fallback.
+2026-09-13 22:47:46,193 - httpx2 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-09-13 22:47:46,194 - main - WARNING - Anthropic API call failed (Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011Cf1pTY56qMhSCxyb1caPt'}), falling back to internal engine
+2026-09-13 22:47:46,912 - main - INFO - Fetching KPI summary
+2026-09-13 22:47:46,919 - httpx2 - INFO - HTTP Request: POST http://testserver/assistant/chat "HTTP/1.1 200 OK"
+2026-09-13 22:47:46,933 - main - INFO - Assistant chat request with 1 bounded turns
+2026-09-13 22:47:46,936 - main - INFO - Using Anthropic API key from .env for assistant chat turn
+2026-09-13 22:47:48,666 - httpx2 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-09-13 22:47:48,666 - main - WARNING - Claude 3.5 Sonnet request failed: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011Cf1pThnFbXWJHnocbGtRP'}. Trying Claude 3 Haiku fallback.
+2026-09-13 22:47:48,998 - httpx2 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-09-13 22:47:48,999 - main - WARNING - Anthropic API call failed (Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011Cf1pTmHbQ4AzR9nzvNNEe'}), falling back to internal engine
+2026-09-13 22:47:49,648 - main - INFO - Fetching KPI summary
+2026-09-13 22:47:49,651 - httpx2 - INFO - HTTP Request: POST http://testserver/assistant/chat "HTTP/1.1 200 OK"
+2026-09-13 22:47:49,658 - main - INFO - Assistant chat request with 8 bounded turns
+2026-09-13 22:47:49,660 - main - INFO - Using Anthropic API key from .env for assistant chat turn
+2026-09-13 22:47:51,021 - httpx2 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-09-13 22:47:51,021 - main - WARNING - Claude 3.5 Sonnet request failed: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011Cf1pTuJYR9CocK8f1W4PS'}. Trying Claude 3 Haiku fallback.
+2026-09-13 22:47:51,457 - httpx2 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-09-13 22:47:51,457 - main - WARNING - Anthropic API call failed (Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011Cf1pTwEdQEBpMphMhWM6w'}), falling back to internal engine
+2026-09-13 22:47:52,231 - main - INFO - Fetching KPI summary
+2026-09-13 22:47:52,916 - httpx2 - INFO - HTTP Request: POST http://testserver/assistant/chat "HTTP/1.1 200 OK"
+2026-09-13 22:47:52,926 - main - INFO - Assistant chat request with 1 bounded turns
+2026-09-13 22:47:52,929 - main - INFO - Using Anthropic API key from .env for assistant chat turn
+2026-09-13 22:47:57,488 - httpx2 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-09-13 22:47:57,488 - main - WARNING - Claude 3.5 Sonnet request failed: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011Cf1pUNxwpvD7o7efFn5sh'}. Trying Claude 3 Haiku fallback.
+2026-09-13 22:47:58,887 - httpx2 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-09-13 22:47:58,888 - main - WARNING - Anthropic API call failed (Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011Cf1pUV4oUSoZ6MTqFiCc1'}), falling back to internal engine
+2026-09-13 22:47:58,891 - httpx2 - INFO - HTTP Request: POST http://testserver/assistant/chat "HTTP/1.1 200 OK"
+2026-09-13 22:49:30,865 - main - INFO - ==================================================
+2026-09-13 22:49:30,865 - main - INFO - Telecom Customer API Shutting Down
+2026-09-13 22:49:30,865 - main - INFO - Timestamp: 2026-09-13 22:49:30.865838
+2026-09-13 22:49:30,865 - main - INFO - ==================================================
+2026-09-13 22:49:40,689 - main - INFO - ==================================================
+2026-09-13 22:49:40,690 - main - INFO - Telecom Customer API Starting Up
+2026-09-13 22:49:40,690 - main - INFO - Timestamp: 2026-09-13 22:49:40.690435
+2026-09-13 22:49:40,690 - main - INFO - ==================================================
+2026-09-13 22:49:59,598 - main - INFO - Fetched risk-tier split
+2026-09-13 22:50:00,053 - main - INFO - Fetched risk-tier split
+2026-09-13 22:50:00,362 - main - INFO - Fetched churn-by-partner aggregation
+2026-09-13 22:50:00,641 - main - INFO - Fetching KPI summary
+2026-09-13 22:50:01,313 - main - INFO - Fetched churn-by-age-bracket aggregation
+2026-09-13 22:50:01,601 - main - INFO - Fetched churn-by-partner aggregation
+2026-09-13 22:50:02,023 - main - INFO - Fetching KPI summary
+2026-09-13 22:50:02,534 - main - INFO - Fetched churn-by-state aggregation
+2026-09-13 22:50:02,906 - main - INFO - Fetched customer page 1/9743 (25 rows, filters={})
+2026-09-13 22:50:03,112 - main - INFO - Fetched churn-by-age-bracket aggregation
+2026-09-13 22:50:04,829 - main - INFO - Fetched churn-by-state aggregation
+2026-09-13 22:50:05,474 - main - INFO - Fetched customer page 1/9743 (25 rows, filters={})
+2026-09-13 22:50:30,825 - main - INFO - Assistant chat request with 2 bounded turns
+2026-09-13 22:50:30,829 - main - INFO - Using Anthropic API key from .env for assistant chat turn
+2026-09-13 22:50:36,809 - httpx2 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-09-13 22:50:36,810 - main - WARNING - Claude 3.5 Sonnet request failed: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'API key is invalid.'}, 'request_id': None}. Trying Claude 3 Haiku fallback.
+2026-09-13 22:50:37,258 - httpx2 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-09-13 22:50:37,259 - main - WARNING - Anthropic API call failed (Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'API key is invalid.'}, 'request_id': None}), falling back to internal engine
+2026-09-13 22:50:38,401 - main - INFO - Fetching KPI summary
+2026-09-13 22:51:23,652 - main - INFO - Assistant chat request with 4 bounded turns
+2026-09-13 22:51:23,657 - main - INFO - Using Anthropic API key from .env for assistant chat turn
+2026-09-13 22:51:25,138 - httpx2 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-09-13 22:51:25,140 - main - WARNING - Claude 3.5 Sonnet request failed: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'API key is invalid.'}, 'request_id': None}. Trying Claude 3 Haiku fallback.
+2026-09-13 22:51:25,658 - httpx2 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-09-13 22:51:25,659 - main - WARNING - Anthropic API call failed (Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'API key is invalid.'}, 'request_id': None}), falling back to internal engine
+2026-09-13 22:51:26,710 - main - INFO - Fetching KPI summary
+2026-09-13 22:52:05,155 - main - INFO - ==================================================
+2026-09-13 22:52:05,155 - main - INFO - Telecom Customer API Shutting Down
+2026-09-13 22:52:05,156 - main - INFO - Timestamp: 2026-09-13 22:52:05.156213
+2026-09-13 22:52:05,156 - main - INFO - ==================================================
+2026-09-13 22:52:14,512 - main - INFO - ==================================================
+2026-09-13 22:52:14,512 - main - INFO - Telecom Customer API Starting Up
+2026-09-13 22:52:14,512 - main - INFO - Timestamp: 2026-09-13 22:52:14.512878
+2026-09-13 22:52:14,513 - main - INFO - ==================================================
+2026-09-13 22:52:17,876 - main - INFO - Fetched risk-tier split
+2026-09-13 22:52:18,239 - main - INFO - Fetched risk-tier split
+2026-09-13 22:52:18,469 - main - INFO - Fetched churn-by-partner aggregation
+2026-09-13 22:52:18,487 - main - INFO - Fetching KPI summary
+2026-09-13 22:52:18,761 - main - INFO - Fetched churn-by-age-bracket aggregation
+2026-09-13 22:52:19,377 - main - INFO - Fetched churn-by-partner aggregation
+2026-09-13 22:52:19,410 - main - INFO - Fetching KPI summary
+2026-09-13 22:52:19,973 - main - INFO - Fetched churn-by-age-bracket aggregation
+2026-09-13 22:52:20,115 - main - INFO - Fetched customer page 1/9743 (25 rows, filters={})
+2026-09-13 22:52:20,741 - main - INFO - Fetched churn-by-state aggregation
+2026-09-13 22:52:22,124 - main - INFO - Fetched customer page 1/9743 (25 rows, filters={})
+2026-09-13 22:52:22,562 - main - INFO - Fetched churn-by-state aggregation
+2026-09-13 22:52:29,206 - main - INFO - Assistant chat request with 2 bounded turns
+2026-09-13 22:52:29,210 - main - INFO - Using Anthropic API key from .env for assistant chat turn
+2026-09-13 22:52:35,804 - httpx2 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-09-13 22:52:35,808 - main - WARNING - Claude 3.5 Sonnet request failed: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'API key is invalid.'}, 'request_id': None}. Trying Claude 3 Haiku fallback.
+2026-09-13 22:52:36,208 - httpx2 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-09-13 22:52:36,209 - main - WARNING - Anthropic API call failed (Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'API key is invalid.'}, 'request_id': None}), falling back to internal engine
+2026-09-13 22:52:37,026 - main - INFO - Fetched churn-by-partner aggregation
+2026-09-13 22:52:57,063 - main - INFO - ==================================================
+2026-09-13 22:52:57,064 - main - INFO - Telecom Customer API Shutting Down
+2026-09-13 22:52:57,064 - main - INFO - Timestamp: 2026-09-13 22:52:57.064734
+2026-09-13 22:52:57,065 - main - INFO - ==================================================

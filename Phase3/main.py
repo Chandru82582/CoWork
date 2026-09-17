@@ -12,12 +12,22 @@ from schemas import (
     ChurnSummaryResponse,
     CustomerResponse,
     HighRiskCustomersListResponse,
+    AssistantChatRequest,
+    AssistantChatResponse,
 )
 from rules import get_churn_summary as get_churn_summary_service
 from rules import get_customer_by_id, get_high_risk_customers
 from ml_model import predict_churn_ensemble
 
-from Phase3.routes import router as dashboard_router
+try:
+    from assistant_service import process_chat_turn
+except ImportError:
+    from Phase3.assistant_service import process_chat_turn
+
+try:
+    from routes import router as dashboard_router
+except ImportError:
+    from Phase3.routes import router as dashboard_router
 
 # --- Logging Setup ---
 logging.basicConfig(
@@ -162,6 +172,26 @@ def predict_churn_endpoint(
     )
 
     return prediction
+
+
+@app.post("/assistant/chat", response_model=AssistantChatResponse)
+@app.post("/chat", response_model=AssistantChatResponse)
+def assistant_chat_endpoint(
+    payload: AssistantChatRequest,
+    current_user: dict = Depends(get_current_admin_user),
+):
+    """
+    Operational assistant endpoint with strict guardrails, visible tool-call trail,
+    and bounded conversation history slice.
+    """
+    logger.info(f"Assistant chat request with {len(payload.messages)} bounded turns")
+    messages_dict = [{"role": m.role, "content": m.content} for m in payload.messages]
+    result = process_chat_turn(messages_dict)
+    return AssistantChatResponse(
+        role="assistant",
+        content=result["content"],
+        tool_calls=result.get("tool_calls", []),
+    )
 
 
 @app.get("/health")

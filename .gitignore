@@ -28,3 +28,8 @@ dist-ssr
 *.sw?
 
 *.joblib
+return_calculator.html
+
+
+.env
+*.env
